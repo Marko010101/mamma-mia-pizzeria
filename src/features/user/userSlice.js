@@ -30,7 +30,7 @@ const initialState = {
   username: "",
   status: "idle",
   position: {},
-  adress: "",
+  address: "",
   error: "",
 };
 
@@ -49,12 +49,13 @@ const userSlice = createSlice({
       })
       .addCase(fetchAdress.fulfilled, (state, action) => {
         state.position = action.payload.position;
-        state.adress = action.payload.adress;
-        status.state = "iddle";
+        state.address = action.payload.address;
+        state.status = "idle"; // Corrected typo
       })
       .addCase(fetchAdress.rejected, (state, action) => {
         state.status = "error";
-        state.error = action.error.message;
+        state.error =
+          "There was a problem getting your address, Make sure to fill this field!";
       }),
 });
 
