@@ -3,7 +3,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./ui/Home.jsx";
 import Error from "./ui/Error.jsx";
 import Menu, { loader as menuLoader } from "./features/menu/Menu.jsx";
-import Cart from "./features/Cart/Cart.jsx";
+import Cart from "./features/cart/Cart.jsx";
 import CreateOrder, {
   action as CreateOrderAction,
 } from "./features/order/CreateOrder.jsx";
