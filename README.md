@@ -1,6 +1,6 @@
 # Miatsa Pizza Single Page Application
 
-Miatsa Pizza is a single-page application built using React, React Router, Redux Toolkit, and styled with Tailwind CSS.
+Miatsa Pizza is a mobile-first single-page application built using React, React Router, Redux Toolkit, and styled with Tailwind CSS, ensuring responsiveness across various devices.
 
 ## Usage
 
@@ -8,7 +8,17 @@ To use the project, input your full name in the provided field. This action will
 
 ## APIs
 
-The project utilizes React Fast Pizza API for uploading the pizza menu and posting orders.
+The project utilizes the following APIs:
+
+- **React Fast Pizza API**: Used for uploading the pizza menu and posting orders.
+  - Base URL: `https://react-fast-pizza-api.onrender.com/api`
+
+- **UI Bakery Phone Number Validation API**: Utilized for validating phone numbers.
+  - Base URL: `https://uibakery.io/regex-library/phone-number`
+
+- **Reverse Geocoding API**: Used for converting coordinates into a readable address.
+  - Base URL: `https://api.bigdatacloud.net/data/reverse-geocode-client`
+
 
 ## Features
 
